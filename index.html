@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Vivid by eBay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Vivid</h1>
+      <h2 class="project-tagline">A visual testing tool to compare two web pages visually and generate the pixel difference they have.</h2>
+      <a href="https://github.com/eBay/Vivid" class="btn">View on GitHub</a>
+      <a href="https://github.com/eBay/Vivid/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/eBay/Vivid/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="environment-setup" class="anchor" href="#environment-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Environment setup</h1>
+
+<p>Mac OS-Run following commands to setup the environment-</p>
+
+<ul>
+<li>Open terminal and copy paste below commands one by one</li>
+<li>ruby -e "$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)"</li>
+<li>Press Enter</li>
+<li>Enter your NT password</li>
+<li>Wait for current installation to finish</li>
+<li>brew install imagemagick</li>
+<li>brew install phantomjs</li>
+</ul>
+
+<p>Windows-
+Run following commands to setup the environment-</p>
+
+<ul>
+<li>Download <a href="http://www.imagemagick.org/download/binaries/ImageMagick-6.9.0-0-Q16-x64-dll.exe">http://www.imagemagick.org/download/binaries/ImageMagick-6.9.0-0-Q16-x64-dll.exe</a>
+</li>
+<li>Double click to install it. Accept all the default settings</li>
+</ul>
+
+<h1>
+<a id="how-to-build-the-jar-file-" class="anchor" href="#how-to-build-the-jar-file-" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to build the jar file-</h1>
+
+<p>User can build either swing based UI application or a command line jar.</p>
+
+<ul>
+<li>
+<strong>Build Swing application</strong>-Comment line#103 in Vivid.java and buld the application using maven Command</li>
+<li>
+<strong>Build command line jar</strong>-Comment from line#87 to line#96 and build the application using maven command </li>
+</ul>
+
+<p><strong>How to use Swing application?</strong></p>
+
+<hr>
+
+<ol>
+<li>Create a directory Vivid under your username on windows it will be C:\Users[your NT user name] on Mac /Users/[your user name]</li>
+<li>Download the jar</li>
+<li>Copy the jar from Download folder to Vivid folder</li>
+<li>Double click the jar file</li>
+<li>Provide the url pairs in URLs text field. You can provide multiple url pairs, each pair in a new line. The format of the url is as follows- url=URL1|URL2. Be informed that there is a " | " in between url1 and url2</li>
+<li>Select the type of device you want to compare you web pages on. The selectable values are Desktop, Tablet and Mobile</li>
+<li>Select the number of threads you want application to  create. If you don't change the preselected value then default would be 5. Make it 10 if you have more than 10 url pairs.</li>
+<li>Click on Run to run the application. Clicking on Exit will close the application</li>
+<li>If you have multiple urls you can create a file having multiple url pairs each starting with new line and upload it using upload urls button.</li>
+<li>Refer the below video for quick introduction of the application. 
+<a href="http://www.powtoon.com/show/ettk3bdHIAK/how-to-use-ebay-vivid/">http://www.powtoon.com/show/ettk3bdHIAK/how-to-use-ebay-vivid/</a>
+</li>
+</ol>
+
+<p><strong>How to use CLI?</strong></p>
+
+<hr>
+
+<ol>
+<li>Create a directory Vivid under your username on windows it will be C:\Users[your NT user name] on Mac /Users/[your user name]</li>
+<li>Download the jar</li>
+<li>Copy the jar from Download folder to Vivid folder</li>
+<li>Download the config.properties file and copy it to Vivid folder</li>
+<li>Delete the existing URL and put your URL. Do not change anything else</li>
+<li>Open command line </li>
+<li>Windows:  cd C:\Users[username]\Vivid<br>
+Mac: cd /Users/[username]/Vivid<br>
+Make sure to replace [username] with your username without [ ]</li>
+<li>Run the command java -jar vivid-0.0.1-SNAPSHOT-cli.jar -propertyFilePath config.properties</li>
+<li>Press Enter</li>
+</ol>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/eBay/Vivid">Vivid</a> is maintained by <a href="https://github.com/eBay">eBay</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
